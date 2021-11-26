@@ -29,7 +29,6 @@ int main()
 			bool run = true;
 			while (run)
 			{
-
 				// click confirm button
 				clickonscreen(837, 843);
 				Sleep(2000);
