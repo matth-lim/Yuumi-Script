@@ -3,7 +3,7 @@
 #include "Functions.h"
 
 using namespace std;
-//asd
+
 int main()
 {
 	while (true)
