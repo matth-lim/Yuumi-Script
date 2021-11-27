@@ -97,15 +97,33 @@ int main()
 				// lock cam
 				presskey('m');
 				Sleep(200);
+				int x = 1887;
+				int y = 758;
 				while (true)
 				{
+					if (GetAsyncKeyState(0x31))
+					{
+						x = 1678;
+					}
+					else if (GetAsyncKeyState(0x32))
+					{
+						x = 1740;
+					}
+					else if (GetAsyncKeyState(0x33))
+					{
+						x = 1820;
+					}
+					else if (GetAsyncKeyState(0x34))
+					{
+						x = 1887;
+					}
 					// check color of yuumi w
 					int color4 = checkcolour(871, 1010);
 					// check color of honor screen
 					int color5 = checkcolour(960, 810);
 					if (color4 == 8063000)
 					{
-						SetCursorPos(1887, 758);
+						SetCursorPos(x, y);
 						Sleep(200);
 						presskey('w');
 						Sleep(200);
